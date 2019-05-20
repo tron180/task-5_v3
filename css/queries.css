@@ -1,0 +1,135 @@
+/* upto large */
+@media (max-width: 992px){
+    .shop{
+        flex-direction: row !important;
+    }
+
+    .nav-link-1 .fa-circle {
+        position: absolute;
+        font-size: 1em;
+        top: 45px;
+        color: #ffc107;
+        right: 21px;
+    }
+
+    .nav-link-1 .num {
+        position: absolute;
+        font-size: 0.8em;
+        top: 44px;
+        color: black;
+        right: 26px;
+    }
+
+    .content{
+        padding-left: 20px;
+    }
+
+    .sticky{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        justify-content: center;
+        margin-left: 3em;
+        border-top: 1px solid black;
+    }
+
+    .sticky li{
+        padding: 20px;
+    }
+
+    .sticky li a{
+        color: black;
+    }
+
+    .sticky li:hover{
+        background-color: #ffc107 !important;
+        color: white !important;
+    }
+
+    .de .row .col-lg-3{
+        padding: 0 !important;
+    }
+
+    .smcont{
+        margin-left: 3em;
+    }
+}
+
+/* large and after */
+@media (min-width: 992px){
+    .content{
+        margin-left: 100px !important;
+    }
+
+}
+
+/* medium */
+@media (min-width: 768px) and (max-width:992px){
+    .image{
+        height: 350px !important;
+    }
+}
+
+/* upto small */
+@media (max-width: 768px){
+    .smcont{
+        margin: 30px;
+        flex: unset !important;
+    }
+
+    .row{
+        margin-left :0 !important;
+    }
+
+    .image{
+        padding: 25px;
+        transform: translate(0, -70px);
+    }
+
+    .sticky{
+        margin-left: 0 !important;
+    }
+
+    .de{
+        padding: 0 !important;
+    }
+}
+
+/* for small */
+@media (min-width: 576px) and (max-width: 768px){
+    .navbar{
+        flex-wrap: wrap-reverse !important;
+    }
+
+    .nav-link-1 .fa-circle {
+        position: absolute;
+        font-size: 1em;
+        top:15px;
+        color: #ffc107;
+        right: 21px;
+    }
+
+    .nav-link-1 .num {
+        position: absolute;
+        font-size: 0.8em;
+        top: 14px;
+        color: black;
+        right: 26px;
+    }
+
+    .navbar-brand{
+        padding-left: 70px !important;
+    }
+
+    .det{
+        padding-top: 0px !important;
+        padding-left: 75px !important;
+    }
+}
+
+/* custom breakpoint */
+@media (max-width:1150px){
+    .sidedetails, .sidedescrip{
+        display: none;
+    }
+}

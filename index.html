@@ -21,22 +21,34 @@
     <div class="container-fluid p-0">
 
         <!-- Navigation Bar -->
-        <nav class="navbar navb navbar-expand navbar-light bg-light ml-5 font-weight-bold">
-            <a href="index.html" class="navbar-brand" style="font-size:5rem; padding: 0 20px;">&infin;</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#smallnavbar" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navb navbar-expand-lg navbar-light bg-light ml-md-5 ml-lg-5 font-weight-bold">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <a href="index.html" class="navbar-brand" style="font-size:5rem; padding: 0 20px;">&infin;</a>
 
-            <div class="navbar navbar-collapse" id="smallnavbar">
-                <ul class="nav ml-auto text-uppercase">
+            <ul class="navbar-nav shop">
+                <li class="nav-item px-3 py-2 d-none d-sm-block d-md-block d-lg-none"><a href="#"><i class="fa fa-search text-dark" aria-hidden="true"></i></a></li>
+                <li class="nav-item px-3 py-2 d-none d-sm-block d-md-block d-lg-none"><a href="#"><i class="far fa-heart text-dark" aria-hidden="true"></i></a></li>
+                <li class="nav-item px-3 py-2 d-none d-sm-block d-md-block d-lg-none">
+                    <a class="nav-link-1" href="#">
+                        <i class="fa fa-shopping-bag text-dark" aria-hidden="true"></i>
+                        <span class="fa fa-circle"></span>
+                        <span class="num">2</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto text-uppercase">
                     <li class="nav-item px-3 font"><a href="" class="nav-link text-dark nv">Bedroom</a></li>
                     <li class="nav-item px-3 font"><a href="" class="nav-link text-dark nv">Living Room</a></li>
                     <li class="nav-item px-3 font"><a href="" class="nav-link text-dark nv">Office</a></li>
                     <li class="nav-item px-3 font"><a href="" class="nav-link text-dark nv">Kitchen</a></li>
                     <li class="nav-item px-3 font"><a href="" class="nav-link text-dark nv">Bathroom</a></li>
-                    <li class="nav-item px-3 py-2"><a href="#"><i class="fa fa-search text-dark" aria-hidden="true"></i></a></li>
-                    <li class="nav-item px-3 py-2"><a href="#"><i class="far fa-heart text-dark" aria-hidden="true"></i></a></li>
-                    <li class="nav-item px-3 py-2">
+                    <li class="nav-item px-3 py-2 d-md-none d-lg-block"><a href="#"><i class="fa fa-search text-dark" aria-hidden="true"></i></a></li>
+                    <li class="nav-item px-3 py-2 d-md-none d-lg-block"><a href="#"><i class="far fa-heart text-dark" aria-hidden="true"></i></a></li>
+                    <li class="nav-item px-3 py-2 d-md-none d-lg-block">
                         <a class="nav-link-1" href="#">
                             <i class="fa fa-shopping-bag text-dark" aria-hidden="true"></i>
                             <span class="fa fa-circle"></span>
@@ -48,7 +60,7 @@
         </nav>
 
         <!-- Breadcrumb -->
-        <nav class="ml-4 pt-4" style="background-color:#e6e6e6;" aria-label="breadcrumb">
+        <nav class="ml-4 pt-4 d-none d-lg-block" style="background-color:#e6e6e6;" aria-label="breadcrumb">
             <ol class="breadcrumb" style="background-color:#e6e6e6;">
                 <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-dark text-uppercase"><i class="fas fa-home"></i></a><i class="fas fa-caret-right pl-3 text-warning"></i></li>
                 <li class="breadcrumb-item active"><a href="#" class="text-decoration-none text-secondary text-uppercase font">Catalog</a><i class="fas fa-caret-right pl-3 text-warning"></i></li>
@@ -58,15 +70,17 @@
         </nav>
 
         <!-- Main Section -->
-        <section class="container-fluid">
-            <div class="row">
+        <section class="container-fluid de">
+
+            <!-- details -->
+            <div class="row" style="margin-bottom: 8.5em;">
                 <div class="col-lg-3">
                     <ul class="text-right list-unstyled sticky">
                         <li class="py font font-weight-bold"><a href="#details" class="text-decoration-none text-dark">DETAILS</a></li>
-                        <li class="py font font-weight-bold"><a href="#details" class="text-decoration-none text-dark">DESCRIPTION</a></li>
-                        <li class="py font font-weight-bold"><a href="#details" class="text-decoration-none text-dark">REVIEWS</a></li>
-                        <li class="py font font-weight-bold"><a href="#details" class="text-decoration-none text-dark">CUSTOM TAB</a></li>
-                        <li>
+                        <li class="py font font-weight-bold"><a href="#description" class="text-decoration-none text-dark">DESCRIPTION</a></li>
+                        <li class="py font font-weight-bold"><a href="#reviews" class="text-decoration-none text-dark">REVIEWS</a></li>
+                        <li class="py font font-weight-bold"><a href="#custom" class="text-decoration-none text-dark">CUSTOM TAB</a></li>
+                        <li class="d-none d-lg-block">
                             <ul class="nav float-right">
                                 <li class="p-3"><a href="#"><i class="fab fa-facebook-f text-dark"></i></a></li>
                                 <li class="p-3"><a href="#"><i class="fab fa-twitter text-dark"></i></a></li>
@@ -75,15 +89,15 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-lg-9 col-md-12 col-sm-12 smcont" id="details">
                     <div class="row bg-light content">
-                        <div class="col-lg-7">
-                            <div class="" id="details">
-                                <img class="img-fluid w-100 image" src="img/sofa.jpg" alt="Sofa Pic">
+                        <div class="col-sm-12 col-md-6 col-lg-7">
+                            <div>
+                                <img class="img-fluid image" src="img/sofa.jpg" alt="Sofa Pic">
                             </div>
                         </div>
-                        <div class="col-lg-5">
-                            <h3 class="font-weight-bolder pt-5" style="color:black;">Nudie Extendable</h3>
+                        <div class="col-md-6 col-lg-5 det pt-5">
+                            <h3 class="font-weight-bolder pt-5 pt-sm-0" style="color:black;">Nudie Extendable</h3>
                             <h3 class="font-weight-bolder" style="color:black;">Sofa for 3 persons.</h3>
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> &nbsp; (23)
                             <p class="py-4" style="font-size:23px;"><span class="through text-secondary">$169 </span> &nbsp;&nbsp; $149</p>
@@ -114,7 +128,7 @@
                             <i class="fas fa-check-circle" style="font-size:1.5em;"></i>
                             <i class="fas fa-circle text-white border border-dark" style="border-radius:50%; font-size: 1.4em;"></i>
                             <br>
-                            <div class="btn-group py-3" role="group" aria-label="Basic example">
+                            <div class="btn-group py-3 mb-5" role="group" aria-label="Basic example">
                                 <button type="button" style="background-color: #e6e6e6;" class="btn btn-secondary border-0 text-dark font-weight-bold">-</button>
                                 <input class="inp font font-weight-bold" type="text" value="1">
                                 <button type="button" style="background-color: #e6e6e6;" class="btn btn-secondary border-0 text-dark font-weight-bold">+</button>
@@ -124,10 +138,104 @@
                     </div>
                 </div>
             </div>
+
+            <!-- description -->
+            <div class="row mt-5" id="description" style="margin-bottom: 8.5em;">
+                <div class="col-lg-2">
+                    <ul class="text-right list-unstyled d-none d-lg-block" style="padding-top:60px;">
+                        <li class="py font font-weight-bold"><a href="#details" class="text-decoration-none text-dark">DETAILS</a></li>
+                        <li class="py font font-weight-bold"><a href="#description" class="text-decoration-none text-dark">DESCRIPTION</a></li>
+                        <li class="py font font-weight-bold"><a href="#reviews" class="text-decoration-none text-dark">REVIEWS</a></li>
+                        <li class="py font font-weight-bold"><a href="#custom" class="text-decoration-none text-dark">CUSTOM TAB</a></li>
+                        <li class="d-none d-lg-block">
+                            <ul class="nav float-right">
+                                <li class="p-3"><a href="#"><i class="fab fa-facebook-f text-dark"></i></a></li>
+                                <li class="p-3"><a href="#"><i class="fab fa-twitter text-dark"></i></a></li>
+                                <li class="pl-3 pt-3"><a href="#"><i class="fab fa-pinterest text-dark"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-10 col-md-12 col-sm-12 smcont" id="description">
+                    <div class="row content">
+                        <div class="col-md-6 col-lg-3 det">
+                            <div class="overlap-text">
+                                <h3 class="mt-1 font-weight-bolder">At vero eos et accusamus et iusto odio dignissimos.</h3>
+                            </div>
+                            <div class="mt-3 text-justify" style="max-width:190px;">
+                                <p class="" style="font-size:15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, officia provident, quod placeat necessitatibus ipsam sed dolorem rerum reprehenderit nobis maiores atque praesentium ipsum ducimus?</p>
+                                <p class="" style="font-size:15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, tenetur voluptatem perferendis voluptates debitis voluptatum sed esse deleniti totam soluta.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-9">
+                            <div>
+                                <img class="img-fluid img2" src="img/living.jpg" alt="Sofa Pic">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5" style="margin-bottom: 8.5em;">
+                <div class="col-lg-2">
+                    <ul class="text-right list-unstyled d-none d-lg-block" style="padding-top:60px;">
+                        <li class="py font font-weight-bold"><a href="#details" class="text-decoration-none text-dark">DETAILS</a></li>
+                        <li class="py font font-weight-bold"><a href="#description" class="text-decoration-none text-dark">DESCRIPTION</a></li>
+                        <li class="py font font-weight-bold"><a href="#reviews" class="text-decoration-none text-dark">REVIEWS</a></li>
+                        <li class="py font font-weight-bold"><a href="#custom" class="text-decoration-none text-dark">CUSTOM TAB</a></li>
+                        <li class="d-none d-lg-block">
+                            <ul class="nav float-right">
+                                <li class="p-3"><a href="#"><i class="fab fa-facebook-f text-dark"></i></a></li>
+                                <li class="p-3"><a href="#"><i class="fab fa-twitter text-dark"></i></a></li>
+                                <li class="pl-3 pt-3"><a href="#"><i class="fab fa-pinterest text-dark"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-10 col-md-12 col-sm-12 smcont">
+                    <div class="row overlap">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-11">
+                            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/qgzn86vgbDE?controls=0?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h3 class="mt-1 font-weight-bolder overlap-text1">At vero eos et accusamus et iusto odio dignissimos.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5" style="margin-bottom: 8.5em;">
+                <div class="col-lg-2">
+                    <ul class="text-right list-unstyled d-none d-lg-block" style="padding-top:60px;">
+                        <li class="py font font-weight-bold"><a href="#details" class="text-decoration-none text-dark">DETAILS</a></li>
+                        <li class="py font font-weight-bold"><a href="#description" class="text-decoration-none text-dark">DESCRIPTION</a></li>
+                        <li class="py font font-weight-bold"><a href="#reviews" class="text-decoration-none text-dark">REVIEWS</a></li>
+                        <li class="py font font-weight-bold"><a href="#custom" class="text-decoration-none text-dark">CUSTOM TAB</a></li>
+                        <li class="d-none d-lg-block">
+                            <ul class="nav float-right">
+                                <li class="p-3"><a href="#"><i class="fab fa-facebook-f text-dark"></i></a></li>
+                                <li class="p-3"><a href="#"><i class="fab fa-twitter text-dark"></i></a></li>
+                                <li class="pl-3 pt-3"><a href="#"><i class="fab fa-pinterest text-dark"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-10 col-md-12 col-sm-12 smcont">
+                    <div class="row overlap">
+                        <div class="col-lg-2">
+                            <p class="text-uppercase font invert">---------------  suggested accomodation</p>
+                        </div>
+                        <div class="col-lg-10">
+                            <img class="img-fluid" src="img/full.jpg" alt="Sofa Pic">
+                            <img class="img-thumbnail shadow-lg" src="img/short.jpg" alt="">
+                            <p class="pdf font-weight-bold"><i class="far fa-arrow-alt-circle-down"></i>&nbsp;&nbsp;&nbsp; DOWNLOAD PDF</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <div class="sidedetails">
-            <h1>Details</h1>
+        <div>
+            <h1 class="sidedetails">Details</h1>
+            <h1 class="sidedescrip">Description</h1>
+            <h1 class="sidedescrip1">Description</h1>
         </div>
 
     </div>
