@@ -12,12 +12,20 @@
     font-size: 13px !important;
 }
 
+.font20{
+    font-size: 18px !important;
+}
+
+.font15{
+    font-size: 15px !important;
+}
+
 .breadcrumb-item::before{
     content: "" !important;
 }
 
 .nv:hover{
-    background-image: linear-gradient(white 50%, #fddd7b 50%) !important;
+    background-image: linear-gradient(yellow 50%, #fddd7b 50%) !important;
     height: 31px;
 }
 
@@ -59,7 +67,17 @@
 
 .sticky{
     /* position: sticky; */
-    padding-top: 60px;  
+    /* padding-top: 60px;   */
+}
+
+.sticky1{
+    margin-top: 300px;
+    margin-right: 20px;
+}
+
+.sticky2{
+    margin-top: 150px;
+    margin-right: 40px;
 }
 
 .active1{
@@ -68,12 +86,18 @@
 }
 
 .sticky li:hover{
-    background-image: linear-gradient(#e6e6e6 50%, #ffc107 50%);
+    background: #fffc00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #fffc00,  #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #fffc00, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .py{
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    /* margin-top: 2.5rem;
+    margin-bottom: 2.5rem; */
+}
+
+.py1{
+    width: 90%;
 }
 
 .inp{
@@ -92,7 +116,7 @@ hr{
     font-size: 8rem;
     letter-spacing: 10px;
     font-weight: 1000;
-    top: 45%;
+    top: 50%;
     display: inline;
     left: -166px;
     position: absolute;
@@ -104,7 +128,7 @@ hr{
     font-size: 5rem;
     letter-spacing: 10px;
     font-weight: 1000;
-    top: 136%;
+    top: 150%;
     display: inline;
     left: -238px;
     position: absolute;
@@ -116,15 +140,63 @@ hr{
     font-size: 5rem;
     letter-spacing: 10px;
     font-weight: 1000;
-    top: 224%;
+    top: 240%;
     display: inline;
     left: -238px;
     position: absolute;
     transform: rotate(-90deg);
 }
 
+.sidedescrip2{
+    color: white;
+    font-size: 5rem;
+    letter-spacing: 10px;
+    font-weight: 1000;
+    top: 340%;
+    display: inline;
+    left: -236px;
+    position: absolute;
+    transform: rotate(-90deg);
+}
+
+.sidereviews{
+    color: white;
+    font-size: 6rem;
+    letter-spacing: 10px;
+    font-weight: 1000;
+    top: 440%;
+    display: inline;
+    left: -150px;
+    position: absolute;
+    transform: rotate(-90deg);
+}
+
+.siderelated{
+    color: white;
+    font-size: 6rem;
+    letter-spacing: 10px;
+    font-weight: 1000;
+    top: 560%;
+    display: inline;
+    left: -150px;
+    position: absolute;
+    transform: rotate(-90deg);
+}
+
 .content .ml-sm-5{
     margin-left: 20px;
+}
+
+.img2{
+    position: relative;
+}
+
+.overlap-text{
+    position: absolute;
+    background-color: #e6e6e6;
+    top: -5px;
+    left: -270px;
+    max-width: 500px;
 }
 
 .overlap{
@@ -140,14 +212,52 @@ hr{
     max-width: 450px; 
 }
 
-.invert{
+.invert {
+    text-align: center;
     transform: rotate(-90deg);
+    width: 190%;
+  }
+  
+  .invert:before {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 47%;
+  }
+  
+  .invert:before {
+    right: 0.5em;
+    margin-left: -94%;
+  }
+  
+  .invert:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
+
+/* .invert{
+    transform: rotate(-90deg);
+    width: max-content; */
+    /* line-height:15em; 
+    text-align: center;
+    background-color: #e6e6e6;
+    margin:10px 0 20px;
+    width: 215%; */
+}
+
+.invert span{
+    /* padding:0 40px; 
+    border-bottom: 1px solid black; */
 }
 
 .img-thumbnail{
     position: absolute;
     bottom: 34px;
-    left: -25px;
+    left: -45px;
     max-width: 40% !important;
     padding: 0 !important;
     margin: 0 !important;
@@ -164,4 +274,40 @@ hr{
 
 .fa-arrow-alt-circle-down{
     font-size: 2em;
+}
+
+.fa-star{
+    color: #ffc107;
+}
+
+.background-details{
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+.lazy{
+    width: 100%;
+    height: 250px;
+    padding-top: 5px;
+}
+
+.foot hr{
+    margin-top: 100px;
+    /* margin-bottom: 60px; */
+}
+
+.foot h3{
+    padding-top: 150px;
+}
+
+.nb:hover{
+    background-color: rgb(250, 207, 67);
+    color: black !important;
+}
+
+.pt{
+    padding-top: 80px;
 }
