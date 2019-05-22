@@ -25,7 +25,7 @@
 }
 
 .nv:hover{
-    background-image: linear-gradient(yellow 50%, #fddd7b 50%) !important;
+    background-image: linear-gradient(#ffffff 60%, #fddd7b 40%);
     height: 31px;
 }
 
@@ -81,14 +81,14 @@
 }
 
 .active1{
-    background-color: #ffc107;
+    background-color: #fddd7b;
     color: white;
 }
 
 .sticky li:hover{
-    background: #fffc00;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #fffc00,  #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #fffc00, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #fddd7b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #fddd7b,  #e6e6e6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #fddd7b, #e6e6e6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .py{
@@ -130,7 +130,7 @@ hr{
     font-weight: 1000;
     top: 150%;
     display: inline;
-    left: -238px;
+    left: -195px;
     position: absolute;
     transform: rotate(-90deg);
 }
@@ -142,7 +142,7 @@ hr{
     font-weight: 1000;
     top: 240%;
     display: inline;
-    left: -238px;
+    left: -195px;
     position: absolute;
     transform: rotate(-90deg);
 }
@@ -154,7 +154,7 @@ hr{
     font-weight: 1000;
     top: 340%;
     display: inline;
-    left: -236px;
+    left: -195px;
     position: absolute;
     transform: rotate(-90deg);
 }
@@ -178,7 +178,7 @@ hr{
     font-weight: 1000;
     top: 560%;
     display: inline;
-    left: -150px;
+    left: -140px;
     position: absolute;
     transform: rotate(-90deg);
 }
@@ -212,64 +212,40 @@ hr{
     max-width: 450px; 
 }
 
-.invert {
-    text-align: center;
+.invert{
+    position: absolute;
     transform: rotate(-90deg);
-    width: 190%;
-  }
-  
-  .invert:before {
-    background-color: #000;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 47%;
-  }
-  
-  .invert:before {
-    right: 0.5em;
-    margin-left: -94%;
-  }
-  
-  .invert:after {
-    left: 0.5em;
-    margin-right: -50%;
-  }
-
-
-/* .invert{
-    transform: rotate(-90deg);
-    width: max-content; */
-    /* line-height:15em; 
-    text-align: center;
-    background-color: #e6e6e6;
-    margin:10px 0 20px;
-    width: 215%; */
+    padding-left: 6%;
+    top: 132px;
+    border-bottom: 1px solid;
+    line-height: 1px;
 }
 
+
 .invert span{
-    /* padding:0 40px; 
-    border-bottom: 1px solid black; */
+    background-color: #e6e6e6;
 }
 
 .img-thumbnail{
     position: absolute;
-    bottom: 34px;
-    left: -45px;
-    max-width: 40% !important;
+    bottom: 48px;
+    left: 64px;
+    max-width: 30% !important;
     padding: 0 !important;
     margin: 0 !important;
 }
 
 .pdf{
     position: absolute;
-    right: 15px;
+    right: 0px;
     bottom: -16px;
     padding: 40px;
     background-color: #ffc107;
     font-size: 1em;
+}
+
+.img3{
+    padding-left: 13%;
 }
 
 .fa-arrow-alt-circle-down{
@@ -309,5 +285,5 @@ hr{
 }
 
 .pt{
-    padding-top: 80px;
+    padding-top: 90px;
 }

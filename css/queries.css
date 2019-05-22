@@ -50,9 +50,6 @@
         padding: 0 !important;
     }
 
-    .smcont{
-        margin-left: 3em;
-    }
 }
 
 /* large and after */
@@ -91,6 +88,11 @@
         padding-top: 40px;
         
     }
+
+    .overlap-text{
+        left: -235px !important;
+    }
+
 }
 
 /* medium */
@@ -119,6 +121,37 @@
         justify-content: space-evenly;
         padding-top: 40px;
         
+    }
+
+    .navb{
+        flex-wrap: unset !important;
+    }
+
+    .nav-link-1 .fa-circle {
+        position: absolute;
+        font-size: 1em;
+        top: 30px;
+        color: #ffc107;
+        right: 21px;
+    }
+
+    .nav-link-1 .num {
+        position: absolute;
+        font-size: 0.8em;
+        top: 29px;
+        color: black;
+        right: 26px;
+    }
+
+    .overlap-text{
+        left: -194px !important;
+        max-width: 445px;
+        padding-bottom: 30px;
+    }
+
+    .invert{
+        padding-left: 2% !important;
+        top: 108px !important;
     }
 }
 
@@ -169,6 +202,67 @@
         right: 26px;
     }
 
+    #description{
+        margin: 5% !important;
+        background-color: white;
+    }
+
+    #description2{
+        margin: 5% 5% 10% 5% !important;
+    }
+
+    .pt{
+        max-width: 85% !important;
+        padding-top: 78%;
+    }
+
+    .img2{
+        position: unset;
+        padding: 20px;
+    }
+
+    .plex{
+        position: absolute !important;
+    }
+
+    .overlap-text{
+        position: unset;
+        background-color: white;
+        top: 0%;
+        left: 0;
+        max-width: 95%;
+    }
+
+    .col-lg-9, .col-lg-11, .col-md-6, .col-sm-12{
+        padding: 0 !important;
+    }
+
+    .row{
+        margin: 0 !important;
+    }
+
+    .overlap-text1{
+        position: unset;
+        background-color: white;
+        margin: auto;
+        padding-top: 105% !important;
+        padding-bottom: 50px !important;
+        max-width: 460px;
+    }
+
+    iframe{
+        position: absolute;
+        width: 112% !important;
+        left: -6%;
+        top: 4%;
+    }
+
+    .pdf{
+        top:0px;
+        bottom: unset;
+        right: 30px;
+    }
+
     .navbar-brand{
         padding-left: 70px !important;
         line-height: initial !important;
@@ -186,6 +280,26 @@
         padding-left: 75px !important;
     }
 
+    .invert{
+        top: 116px !important;
+        left: -60px;
+    }
+
+    .thumb{
+        max-width: 60% !important;
+        left: 30px;
+        bottom: 50px;
+    }
+
+    .img3{
+        max-width: 95% !important;
+        height: 565px !important;
+    }
+
+    .comments{
+        width: 22% !important;
+    }
+
     #p0{
         padding-top: 2px !important;
     }
@@ -193,11 +307,71 @@
     .smcont{
         margin-top: 100px;
     }
+
+    .flex-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .int-flex-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .int-flex-cont1 a{
+        padding: 10px;
+    }
+
+    .int-flex-cont p{
+        text-align: center;
+    }
+
+    .int-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 2em;
+    }
+
+    .foot hr{
+        margin-top: 20px !important;
+    }
+
+    .nav-link-1 .fa-circle {
+        position: absolute;
+        font-size: 1em;
+        top: 25px;
+        color: #ffc107;
+        right: 21px;
+    }
+
+    .nav-link-1 .num {
+        position: absolute;
+        font-size: 0.8em;
+        top: 24px;
+        color: black;
+        right: 26px;
+    }
 }
 
 /* custom breakpoint */
 @media (max-width:1150px){
-    .sidedetails, .sidedescrip, .sidedescrip1{
+    .sidedetails, .sidedescrip, .sidedescrip1, .sidedescrip2, .sidereviews, .siderelated{
         display: none;
+    }
+}
+
+@media (max-width:1256px){
+    .overlap-text{
+        left: -210px;
+    }
+}
+
+@media (max-width:830px){
+    .overlap-text{
+        left: -160px !important;
     }
 }
