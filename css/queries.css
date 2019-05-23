@@ -29,7 +29,6 @@
         flex-direction: row;
         background-color: white;
         justify-content: center;
-        margin-left: 3em;
         border-top: 1px solid black;
     }
 
@@ -97,6 +96,11 @@
 
 /* medium */
 @media (min-width: 768px) and (max-width:992px){
+
+    .sticky{
+        margin-left: 3rem !important;
+    }
+
     .image{
         height: 350px !important;
     }
@@ -120,7 +124,14 @@
         flex-direction: row;
         justify-content: space-evenly;
         padding-top: 40px;
-        
+    }
+
+    .selected{
+        background-color: #ffc107;
+    }
+
+    .selected a{
+        color: white !important;
     }
 
     .navb{
@@ -362,11 +373,21 @@
     .sidedetails, .sidedescrip, .sidedescrip1, .sidedescrip2, .sidereviews, .siderelated{
         display: none;
     }
+
+    .overlap-text{
+        left: -170px !important;
+    }
 }
 
 @media (max-width:1256px){
     .overlap-text{
         left: -210px;
+    }
+}
+
+@media (max-width:1236px){
+    .overlap-text{
+        left: -180px !important;
     }
 }
 

@@ -34,7 +34,7 @@
                     <a class="nav-link-1" href="#">
                         <i class="fa fa-shopping-bag text-dark" aria-hidden="true"></i>
                         <span class="fa fa-circle"></span>
-                        <span class="num">2</span>
+                        <span class="num" id="num">0</span>
                     </a>
                 </li>
             </ul>
@@ -99,7 +99,11 @@
                         <div class="col-md-6 col-lg-5 p-md-0 det pt-lg-5">
                             <h3 class="font-weight-bolder pt-md-5 pt-lg-5" style="color:black;">Nudie Extendable</h3>
                             <h3 class="font-weight-bolder" style="color:black;">Sofa for 3 persons.</h3>
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> &nbsp; (23)
+                            <span onmouseover="starmark(this)" onclick="starmark(this)" id="1one"><i class="fas fa-star"></i></span>
+                            <span onmouseover="starmark(this)" onclick="starmark(this)" id="2one"><i class="fas fa-star"></i></span>
+                            <span onmouseover="starmark(this)" onclick="starmark(this)" id="3one"><i class="fas fa-star"></i></span>
+                            <span onmouseover="starmark(this)" onclick="starmark(this)" id="4one"><i class="fas fa-star"></i></span>
+                            <span onmouseover="starmark(this)" onclick="starmark(this)" id="5one"><i class="fas fa-star"></i></span> &nbsp; (23)
                             <p class="py-4" style="font-size:23px;"><span class="through text-secondary">$169 </span> &nbsp;&nbsp; $149</p>
                             <hr>
                             <ul style="list-style:square;">
@@ -290,13 +294,13 @@
             </div>
 
             <!-- Related -->
-            <div class="row mt-5 mx-sm-5" id="reviews" style="margin-bottom: 8.5em;">
+            <div class="row mt-5 mx-sm-5" id="related" style="margin-bottom: 8.5em;">
                 <div class="col-lg-3">
                     <ul class="text-right list-unstyled sticky2 d-none d-lg-block">
-                        <li class="py font font-weight-bold selected"><a href="#details" class="text-decoration-none text-dark">DETAILS</a></li>
-                        <li class="py font font-weight-bold"><a href="#description" class="text-decoration-none text-dark">DESCRIPTION</a></li>
-                        <li class="py font font-weight-bold"><a href="#reviews" class="text-decoration-none text-dark">REVIEWS</a></li>
-                        <li class="py font font-weight-bold"><a href="#related" class="text-decoration-none text-dark">RELATED</a></li>
+                        <li class="py font font-weight-bold selected"   ><a href="#details" id="head" class="text-decoration-none text-dark">DETAILS</a></li>
+                        <li class="py font font-weight-bold"    ><a href="#description" id="head" class="text-decoration-none text-dark">DESCRIPTION</a></li>
+                        <li class="py font font-weight-bold"    ><a href="#reviews" id="head" class="text-decoration-none text-dark">REVIEWS</a></li>
+                        <li class="py font font-weight-bold"    ><a href="#related" id="head" class="text-decoration-none text-dark">RELATED</a></li>
                         <li class="d-none d-lg-block">
                             <ul class="nav float-right">
                                 <li class="p-3"><a href="#"><i class="fab fa-facebook-f text-dark"></i></a></li>

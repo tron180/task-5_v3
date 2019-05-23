@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .navb{
     padding: 0 10px;
     height: 100px;
@@ -66,8 +70,7 @@
 }
 
 .sticky{
-    position: sticky;
-    padding-top: 60px;  
+    /* position: sticky;   */
 }
 
 .sticky1{
@@ -250,10 +253,6 @@ hr{
 
 .fa-arrow-alt-circle-down{
     font-size: 2em;
-}
-
-.fa-star{
-    color: #ffc107;
 }
 
 .background-details{
