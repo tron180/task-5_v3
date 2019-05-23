@@ -52,7 +52,7 @@
                         <a class="nav-link-1" href="#">
                             <i class="fa fa-shopping-bag text-dark" aria-hidden="true"></i>
                             <span class="fa fa-circle"></span>
-                            <span class="num">2</span>
+                            <span class="num" id="num">0</span>
                         </a>
                     </li>
                 </ul>
@@ -129,10 +129,10 @@
                             <i class="fas fa-circle text-white border border-dark" style="border-radius:50%; font-size: 1.4em;"></i>
                             <br>
                             <div class="btn-group py-3 mb-5" role="group" aria-label="Basic example">
-                                <button type="button" style="background-color: #e6e6e6;" class="btn btn-secondary border-0 text-dark font-weight-bold">-</button>
-                                <input class="inp font font-weight-bold" type="text" value="1">
-                                <button type="button" style="background-color: #e6e6e6;" class="btn btn-secondary border-0 text-dark font-weight-bold">+</button>
-                                <button class="btn text-uppercase bg-warning px-5 font text-white font-weight-bold">add to cart</button>
+                                <button type="button" style="background-color: #e6e6e6;" class="btn btn-secondary border-0 text-dark font-weight-bold" onclick="dec()">-</button>
+                                <input class="inp font font-weight-bold" id="inp" type="text" value="0">
+                                <button type="button" style="background-color: #e6e6e6;" class="btn btn-secondary border-0 text-dark font-weight-bold" onclick="inc()">+</button>
+                                <button class="btn text-uppercase bg-warning px-5 font text-white font-weight-bold" onclick="cart()">add to cart</button>
                             </div>
                         </div>
                     </div>

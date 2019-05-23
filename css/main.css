@@ -66,8 +66,8 @@
 }
 
 .sticky{
-    /* position: sticky; */
-    /* padding-top: 60px;   */
+    position: sticky;
+    padding-top: 60px;  
 }
 
 .sticky1{
