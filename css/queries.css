@@ -4,6 +4,16 @@
         flex-direction: row !important;
     }
 
+    .shop .fa-search,.fa-heart,.fa-shopping-bag{
+        font-size: 1.5em;
+    }
+
+    .selecting{
+        background: #fddd7b;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #fddd7b,  #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #fddd7b, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
     .nav-link-1 .fa-circle {
         position: absolute;
         font-size: 1em;
@@ -127,7 +137,7 @@
     }
 
     .selected{
-        background-color: #ffc107;
+        background-color: #ffc107 !important;
     }
 
     .selected a{
@@ -224,7 +234,7 @@
 
     .pt{
         max-width: 85% !important;
-        padding-top: 78%;
+        padding-top: 82%;
     }
 
     .img2{

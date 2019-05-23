@@ -70,7 +70,9 @@ html{
 }
 
 .sticky{
-    /* position: sticky;   */
+    position: sticky;  
+    top: 25%;
+    bottom: 20%;
 }
 
 .sticky1{
@@ -123,7 +125,7 @@ hr{
     display: inline;
     left: -166px;
     position: absolute;
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) !important;
 }
 
 .sidedescrip{
@@ -285,4 +287,8 @@ hr{
 
 .pt{
     padding-top: 90px;
+}
+
+.selecting{
+    background-image: linear-gradient(#e6e6e6 60%, #fddd7b 40%)
 }

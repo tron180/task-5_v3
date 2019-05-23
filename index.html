@@ -14,6 +14,9 @@
     <!-- Bootstrap Link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- AOS Link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Responsive Website</title>
 </head>
 <body style="background-color: #e6e6e6">
@@ -52,7 +55,7 @@
                         <a class="nav-link-1" href="#">
                             <i class="fa fa-shopping-bag text-dark" aria-hidden="true"></i>
                             <span class="fa fa-circle"></span>
-                            <span class="num" id="num">0</span>
+                            <span class="num" id="num1">0</span>
                         </a>
                     </li>
                 </ul>
@@ -72,14 +75,13 @@
         <!-- Main Section -->
         <section class="container-fluid de">
 
-            <!-- Details -->
-            <div class="row" style="margin-bottom: 8.5em;">
-                <div class="col-lg-3 pr-lg-5">
-                    <ul class="text-right list-unstyled sticky">
-                        <li class="py font font-weight-bold selected"><a href="#details" class="text-decoration-none text-dark">DETAILS</a></li>
-                        <li class="py font font-weight-bold"><a href="#description" class="text-decoration-none text-dark">DESCRIPTION</a></li>
-                        <li class="py font font-weight-bold"><a href="#reviews" class="text-decoration-none text-dark">REVIEWS</a></li>
-                        <li class="py font font-weight-bold"><a href="#related" class="text-decoration-none text-dark">RELATED</a></li>
+            <div class="row">
+                <div class="col-lg-3 pr-lg-5 pb-lg-5">
+                    <ul class="text-right list-unstyled sticky" id="sticky">
+                        <li id="py" class="py font font-weight-bold selected"><a href="#details" class="text-decoration-none text-dark">DETAILS</a></li>
+                        <li id="py" class="py font font-weight-bold selecting"><a href="#description" class="text-decoration-none text-dark">DESCRIPTION</a></li>
+                        <li id="py" class="py font font-weight-bold"><a href="#reviews" class="text-decoration-none text-dark">REVIEWS</a></li>
+                        <li id="py" class="py font font-weight-bold"><a href="#related" class="text-decoration-none text-dark">RELATED</a></li>
                         <li class="d-none d-lg-block">
                             <ul class="nav float-right">
                                 <li class="p-3"><a href="#"><i class="fab fa-facebook-f text-dark"></i></a></li>
@@ -89,325 +91,259 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-9 col-md-12 col-sm-12 smcont" id="details">
-                    <div class="row bg-light content ml-md-4">
-                        <div class="col-sm-12 col-md-6 col-lg-7">
-                            <div>
-                                <img class="img-fluid image" src="img/sofa.jpg" alt="Sofa Pic">
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-5 p-md-0 det pt-lg-5">
-                            <h3 class="font-weight-bolder pt-md-5 pt-lg-5" style="color:black;">Nudie Extendable</h3>
-                            <h3 class="font-weight-bolder" style="color:black;">Sofa for 3 persons.</h3>
-                            <span onmouseover="starmark(this)" onclick="starmark(this)" id="1one"><i class="fas fa-star"></i></span>
-                            <span onmouseover="starmark(this)" onclick="starmark(this)" id="2one"><i class="fas fa-star"></i></span>
-                            <span onmouseover="starmark(this)" onclick="starmark(this)" id="3one"><i class="fas fa-star"></i></span>
-                            <span onmouseover="starmark(this)" onclick="starmark(this)" id="4one"><i class="fas fa-star"></i></span>
-                            <span onmouseover="starmark(this)" onclick="starmark(this)" id="5one"><i class="fas fa-star"></i></span> &nbsp; (23)
-                            <p class="py-4" style="font-size:23px;"><span class="through text-secondary">$169 </span> &nbsp;&nbsp; $149</p>
-                            <hr>
-                            <ul style="list-style:square;">
-                                <li class="font"><b>ASSEMBLY :</b> Carpenter Assembly</li>
-                                <li class="font"><b>WARRANTY :</b> 12 Months Warranty</li>
-                            </ul>
-                            <hr>
-                            <div class="d-flex flex-row">
-                                <div class="pl-2 pt-1 icons"><i class="fas fa-car"></i></div>
-                                <div class="p-2">
-                                    <ul class="list-unstyled">
-                                        <li class="font">SAME DAY</li>
-                                        <li class="font">DISPATCH</li>
+                <div class="col-lg-9">
+
+                    <!-- Details -->
+                    <div class="row" style="margin-bottom: 8.5em;">
+                        <div class="col-lg-12 col-md-12 col-sm-12 smcont" id="details">
+                            <div class="row bg-light content ml-md-4">
+                                <div class="col-sm-12 col-md-6 col-lg-7">
+                                    <div>
+                                        <img class="img-fluid image" src="img/sofa.jpg" alt="Sofa Pic">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-5 p-md-0 det pt-lg-5">
+                                    <h3 class="font-weight-bolder pt-md-5 pt-lg-5" style="color:black;">Nudie Extendable</h3>
+                                    <h3 class="font-weight-bolder" style="color:black;">Sofa for 3 persons.</h3>
+                                    <span onmouseover="starmark(this)" onclick="starmark(this)" id="1one"><i class="fas fa-star"></i></span>
+                                    <span onmouseover="starmark(this)" onclick="starmark(this)" id="2one"><i class="fas fa-star"></i></span>
+                                    <span onmouseover="starmark(this)" onclick="starmark(this)" id="3one"><i class="fas fa-star"></i></span>
+                                    <span onmouseover="starmark(this)" onclick="starmark(this)" id="4one"><i class="fas fa-star"></i></span>
+                                    <span onmouseover="starmark(this)" onclick="starmark(this)" id="5one"><i class="fas fa-star"></i></span> &nbsp; (23)
+                                    <p class="py-4" style="font-size:23px;"><span class="through text-secondary">$169 </span> &nbsp;&nbsp; $149</p>
+                                    <hr>
+                                    <ul style="list-style:square;">
+                                        <li class="font"><b>ASSEMBLY :</b> Carpenter Assembly</li>
+                                        <li class="font"><b>WARRANTY :</b> 12 Months Warranty</li>
                                     </ul>
-                                </div>
-                                <div class="pl-2 pt-1 icons"><i class="fas fa-recycle"></i></div>
-                                <div class="p-2">
-                                    <ul class="list-unstyled">
-                                        <li class="font">EASY 30-DAY</li>
-                                        <li class="font">RETURN POLICY</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <p class="font text-uppercase font-weight-bolder">color:</p>
-                            <i class="fas fa-circle" style="font-size:1.5em; color: #e6ccb3"></i>
-                            <i class="fas fa-check-circle" style="font-size:1.5em;"></i>
-                            <i class="fas fa-circle text-white border border-dark" style="border-radius:50%; font-size: 1.4em;"></i>
-                            <br>
-                            <div class="btn-group py-3 mb-5" role="group" aria-label="Basic example">
-                                <button type="button" style="background-color: #e6e6e6;" class="btn btn-secondary border-0 text-dark font-weight-bold" onclick="dec()">-</button>
-                                <input class="inp font font-weight-bold" id="inp" type="text" value="0">
-                                <button type="button" style="background-color: #e6e6e6;" class="btn btn-secondary border-0 text-dark font-weight-bold" onclick="inc()">+</button>
-                                <button class="btn text-uppercase bg-warning px-5 font text-white font-weight-bold" onclick="cart()">add to cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Description -->
-            <div class="row mt-lg-5" id="description" style="margin-bottom: 8.5em;">
-                <div class="col-lg-3">
-                    <ul class="text-right list-unstyled d-none d-lg-block" style="padding-top:60px;">
-                        <li class="py font font-weight-bold"><a href="#details" class="text-decoration-none text-dark">DETAILS</a></li>
-                        <li class="py font font-weight-bold"><a href="#description" class="text-decoration-none text-dark">DESCRIPTION</a></li>
-                        <li class="py font font-weight-bold"><a href="#reviews" class="text-decoration-none text-dark">REVIEWS</a></li>
-                        <li class="py font font-weight-bold"><a href="#related" class="text-decoration-none text-dark">RELATED</a></li>
-                        <li class="d-none d-lg-block">
-                            <ul class="nav float-right">
-                                <li class="p-3"><a href="#"><i class="fab fa-facebook-f text-dark"></i></a></li>
-                                <li class="p-3"><a href="#"><i class="fab fa-twitter text-dark"></i></a></li>
-                                <li class="pl-3 pt-3"><a href="#"><i class="fab fa-pinterest text-dark"></i></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-9 col-md-12 col-sm-12">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="mt-lg-5 pt text-justify" style="max-width:230px;">
-                                <p class="pl-sm-5" style="font-size:15px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, vero earum? Asperiores inventore quod suscipit doloribus laudantium cum dolorum tempora eos rem enim autem deleniti, natus ipsa provident neque officia.</p>
-                                <p class="pl-sm-5 pb-sm-5" style="font-size:15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, sint ad similique recusandae ex, necessitatibus inventore aperiam vel dolore iusto minima maiores quaerat. Unde eius id veritatis aliquid accusantium et?</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-9 col-lg-9 plex pr-lg-0">
-                            <div>
-                                <img class="img-fluid img2" src="img/living.jpg" alt="Sofa Pic">
-                            </div>
-                            <div class="pl-sm-4">
-                                <h3 class="mt-lg-1 ml-lg-2 pr-lg-4 pb-lg-5 overlap-text font-weight-bolder">At vero eos et accusamus et iusto odio dignissimos.</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-5" id="description" style="margin-bottom: 8.5em;">
-                <div class="col-lg-3">
-                    <ul class="text-right list-unstyled d-none d-lg-block" style="padding-top:60px;">
-                        <li class="py font font-weight-bold"><a href="#details" class="text-decoration-none text-dark">DETAILS</a></li>
-                        <li class="py font font-weight-bold"><a href="#description" class="text-decoration-none text-dark">DESCRIPTION</a></li>
-                        <li class="py font font-weight-bold"><a href="#reviews" class="text-decoration-none text-dark">REVIEWS</a></li>
-                        <li class="py font font-weight-bold"><a href="#related" class="text-decoration-none text-dark">RELATED</a></li>
-                        <li class="d-none d-lg-block">
-                            <ul class="nav float-right">
-                                <li class="p-3"><a href="#"><i class="fab fa-facebook-f text-dark"></i></a></li>
-                                <li class="p-3"><a href="#"><i class="fab fa-twitter text-dark"></i></a></li>
-                                <li class="pl-3 pt-3"><a href="#"><i class="fab fa-pinterest text-dark"></i></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-9 col-md-12 col-sm-12">
-                    <div class="row overlap">
-                        <div class="col-lg-1"></div>
-                        <div class="col-lg-11 pr-lg-0">
-                            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/qgzn86vgbDE?controls=0?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <h3 class="mt-lg-1 font-weight-bolder overlap-text1">At vero eos et accusamus et iusto odio dignissimos.</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-5" id="description2" style="margin-bottom: 8.5em;">
-                <div class="col-lg-3">
-                    <ul class="text-right list-unstyled d-none d-lg-block" style="padding-top:60px;">
-                        <li class="py font font-weight-bold"><a href="#details" class="text-decoration-none text-dark">DETAILS</a></li>
-                        <li class="py font font-weight-bold"><a href="#description" class="text-decoration-none text-dark">DESCRIPTION</a></li>
-                        <li class="py font font-weight-bold"><a href="#reviews" class="text-decoration-none text-dark">REVIEWS</a></li>
-                        <li class="py font font-weight-bold"><a href="#related" class="text-decoration-none text-dark">RELATED</a></li>
-                        <li class="d-none d-lg-block">
-                            <ul class="nav float-right">
-                                <li class="p-3"><a href="#"><i class="fab fa-facebook-f text-dark"></i></a></li>
-                                <li class="p-3"><a href="#"><i class="fab fa-twitter text-dark"></i></a></li>
-                                <li class="pl-3 pt-3"><a href="#"><i class="fab fa-pinterest text-dark"></i></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            <div class="col-lg-9 col-md-12 col-sm-12 pl-lg-5 pr-lg-0">
-                    <div class="overlap">
-                        <img class="img-fluid img3" src="img/full.jpg" alt="Sofa Pic">
-                        <img class="img-thumbnail thumb shadow-lg" src="img/short.jpg" alt="">
-                        <p class="pdf font-weight-bold"><i class="far fa-arrow-alt-circle-down"></i>&nbsp;&nbsp;&nbsp; DOWNLOAD PDF</p>
-                        <p class="text-uppercase mb-0 font font-weight-bold invert"> <span>suggested accomodation</span></p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Reviews -->
-            <div class="row mt-5" id="reviews" style="margin-bottom: 8.5em;">
-                <div class="col-lg-3">
-                    <ul class="text-right list-unstyled sticky1 d-none d-lg-block">
-                        <li class="py font font-weight-bold selected"><a href="#details" class="text-decoration-none text-dark">DETAILS</a></li>
-                        <li class="py font font-weight-bold"><a href="#description" class="text-decoration-none text-dark">DESCRIPTION</a></li>
-                        <li class="py font font-weight-bold"><a href="#reviews" class="text-decoration-none text-dark">REVIEWS</a></li>
-                        <li class="py font font-weight-bold"><a href="#related" class="text-decoration-none text-dark">RELATED</a></li>
-                        <li class="d-none d-lg-block">
-                            <ul class="nav float-right">
-                                <li class="p-3"><a href="#"><i class="fab fa-facebook-f text-dark"></i></a></li>
-                                <li class="p-3"><a href="#"><i class="fab fa-twitter text-dark"></i></a></li>
-                                <li class="pl-3 pt-3"><a href="#"><i class="fab fa-pinterest text-dark"></i></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-9 pl-lg-5 reviews">
-                    <h3 class="mb-lg-5 mx-sm-5"><strong><span>23</span> Reviews for Nudie Extendable Sofa</strong></h3>
-                    <div class="mb-lg-5 mx-sm-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star text-secondary"></i> &nbsp; <span class="text-secondary">4.31 (61 reviews)</span></div>
-
-                    <!-- Review 1 -->
-                    <div class="row mx-sm-5 mt-sm-5" style="margin-bottom: 3em;">
-                        <div class="col-lg-4 col-sm-12">
-                            <div class="d-flex flex-row">
-                                <img src="img/boy-casual.jpg" alt="Jonathen Doe" class="img4 mt-sm-2 mt-lg-3 mr-lg-3 rounded-circle" width="55px" height="55px">
-                                <div class="d-flex flex-column ml-sm-4">
-                                    <h4 class="font-weight-bold mt-sm-2 mt-lg-3 font20">Johnathen Doe</h4>
-                                    <p class="text-secondary font20">August 28, 2016</p>
+                                    <hr>
+                                    <div class="d-flex flex-row">
+                                        <div class="pl-2 pt-1 icons"><i class="fas fa-car"></i></div>
+                                        <div class="p-2">
+                                            <ul class="list-unstyled">
+                                                <li class="font">SAME DAY</li>
+                                                <li class="font">DISPATCH</li>
+                                            </ul>
+                                        </div>
+                                        <div class="pl-2 pt-1 icons"><i class="fas fa-recycle"></i></div>
+                                        <div class="p-2">
+                                            <ul class="list-unstyled">
+                                                <li class="font">EASY 30-DAY</li>
+                                                <li class="font">RETURN POLICY</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p class="font text-uppercase font-weight-bolder">color:</p>
+                                    <i class="fas fa-circle" style="font-size:1.5em; color: #e6ccb3"></i>
+                                    <i class="fas fa-check-circle" style="font-size:1.5em;"></i>
+                                    <i class="fas fa-circle text-white border border-dark" style="border-radius:50%; font-size: 1.4em;"></i>
+                                    <br>
+                                    <div class="btn-group py-3 mb-5" role="group" aria-label="Basic example">
+                                        <button type="button" style="background-color: #e6e6e6;" class="btn btn-secondary border-0 text-dark font-weight-bold" onclick="dec()">-</button>
+                                        <input class="inp font font-weight-bold" id="inp" type="text" value="0">
+                                        <button type="button" style="background-color: #e6e6e6;" class="btn btn-secondary border-0 text-dark font-weight-bold" onclick="inc()">+</button>
+                                        <button class="btn text-uppercase bg-warning px-5 font text-white font-weight-bold" onclick="cart()">add to cart</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-8 col-sm-12 mt-lg-3">
-                            <h4 class="font-weight-bold mb-2 mt-sm-2 font20">Excellent</h4>
-                            <div class="mb-lg-4 my-sm-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star text-secondary"></i></div>
-                            <p class="text-secondary pr-lg-5 font15 py1"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem error incidunt veritatis quia. Eligendi deserunt in facilis temporibus quod ipsum maiores saepe vitae quidem itaque assumenda quo voluptatem commodi ad nihil modi, nesciunt repellat a. Temporibus cupiditate omnis amet quod ullam saepe laborum rem odit. Velit explicabo impedit quibusdam rerum.</i></p>
-                            <p class="font-weight-bold my-sm-4 comments border border-warning border-top-0 border-left-0 border-right-0" style="width:25%">Add comment</p>
-                        </div>
                     </div>
 
-                    <!-- Review 2 -->
-                    <div class="row mx-sm-5 mt-sm-5">
-                        <div class="col-lg-4 col-sm-12">
-                            <div class="d-flex flex-row">
-                                <img src="img/woman-casual.jpg" alt="Jonathen Doe" class="img4 mt-sm-2 mt-lg-3 mr-lg-3 rounded-circle" width="55px" height="55px">
-                                <div class="d-flex flex-column ml-sm-4">
-                                    <h4 class="font-weight-bold mt-sm-2 mt-lg-3 font20">Johnathen Doe</h4>
-                                    <p class="text-secondary font20">August 28, 2016</p>
+                    <!-- Description -->
+                    <div class="row mt-lg-5" id="description" style="margin-bottom: 8.5em;">
+                        <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-3 col-lg-3">
+                                    <div class="mt-lg-5 pt text-justify" style="max-width:230px;">
+                                        <p class="pl-sm-5" style="font-size:15px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, vero earum? Asperiores inventore quod suscipit doloribus laudantium cum dolorum tempora eos rem enim autem deleniti, natus ipsa provident neque officia.</p>
+                                        <p class="pl-sm-5 pb-sm-5" style="font-size:15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, sint ad similique recusandae ex, necessitatibus inventore aperiam vel dolore iusto minima maiores quaerat. Unde eius id veritatis aliquid accusantium et?</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-9 col-lg-9 plex pr-lg-0">
+                                    <div>
+                                        <img class="img-fluid img2" src="img/living.jpg" alt="Sofa Pic">
+                                    </div>
+                                    <div class="pl-sm-4">
+                                        <h3 class="mt-lg-1 ml-lg-2 pr-lg-4 pb-lg-5 overlap-text font-weight-bolder"><span data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">At vero eos et accusamus et iusto odio dignissimos.</span></h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-8 col-sm-12 mt-lg-3">
-                            <h4 class="font-weight-bold mb-2 mt-sm-2 font20">Excellent</h4>
-                            <div class="mb-lg-4 my-sm-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star text-secondary"></i></div>
-                            <p class="text-secondary pr-lg-5 font15 py1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem error incidunt veritatis quia. Eligendi deserunt in facilis temporibus quod ipsum maiores saepe vitae quidem itaque assumenda quo voluptatem commodi ad nihil modi, nesciunt repellat a. Temporibus cupiditate omnis amet quod ullam saepe laborum rem odit. Velit explicabo impedit quibusdam rerum.</p>
+                    </div>
+                    <div class="row mt-5" id="description" style="margin-bottom: 8.5em;">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="row overlap">
+                                <div class="col-lg-1"></div>
+                                <div class="col-lg-11 pr-lg-0">
+                                    <iframe width="100%" height="500px" src="https://www.youtube.com/embed/qgzn86vgbDE?controls=0?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <h3 class="mt-lg-1 font-weight-bolder overlap-text1">At vero eos et accusamus et iusto odio dignissimos.</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5" id="description2" style="margin-bottom: 8.5em;">
+                        <div class="col-lg-12 col-md-12 col-sm-12 pl-lg-5 pr-lg-0">
+                            <div class="overlap">
+                                <img class="img-fluid img3" src="img/full.jpg" alt="Sofa Pic">
+                                <img class="img-thumbnail thumb shadow-lg" src="img/short.jpg" alt="">
+                                <p class="pdf font-weight-bold"><i class="far fa-arrow-alt-circle-down"></i>&nbsp;&nbsp;&nbsp; DOWNLOAD PDF</p>
+                                <p class="text-uppercase mb-0 font font-weight-bold invert"> <span>suggested accomodation</span></p>
+                            </div>
                         </div>
                     </div>
 
-                    <p class="text-center pt-5"><span class="font-weight-bold pb-1 border border-warning border-top-0 border-left-0 border-right-0">Load more(21)</span> </p>
+                    <!-- Reviews -->
+                    <div class="row mt-5" id="reviews" style="margin-bottom: 8.5em;">
+                        <div class="col-lg-12 pl-lg-5 reviews">
+                            <h3 class="mb-lg-5 mx-sm-5"><strong><span>23</span> Reviews for Nudie Extendable Sofa</strong></h3>
+                            <div class="mb-lg-5 mx-sm-5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star text-secondary"></i> &nbsp; <span class="text-secondary">4.31 (61 reviews)</span></div>
+
+                            <!-- Review 1 -->
+                            <div class="row mx-sm-5 mt-sm-5" style="margin-bottom: 3em;">
+                                <div class="col-lg-4 col-sm-12">
+                                    <div class="d-flex flex-row">
+                                        <img src="img/boy-casual.jpg" alt="Jonathen Doe" class="img4 mt-sm-2 mt-lg-3 mr-lg-3 rounded-circle" width="55px" height="55px">
+                                        <div class="d-flex flex-column ml-sm-4">
+                                            <h4 class="font-weight-bold mt-sm-2 mt-lg-3 font20">Johnathen Doe</h4>
+                                            <p class="text-secondary font20">August 28, 2016</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-sm-12 mt-lg-3">
+                                    <h4 class="font-weight-bold mb-2 mt-sm-2 font20">Excellent</h4>
+                                    <div class="mb-lg-4 my-sm-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star text-secondary"></i></div>
+                                    <p class="text-secondary pr-lg-5 font15 py1"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem error incidunt veritatis quia. Eligendi deserunt in facilis temporibus quod ipsum maiores saepe vitae quidem itaque assumenda quo voluptatem commodi ad nihil modi, nesciunt repellat a. Temporibus cupiditate omnis amet quod ullam saepe laborum rem odit. Velit explicabo impedit quibusdam rerum.</i></p>
+                                    <p class="font-weight-bold my-sm-4 comments border border-warning border-top-0 border-left-0 border-right-0" style="width:25%">Add comment</p>
+                                </div>
+                            </div>
+
+                            <!-- Review 2 -->
+                            <div class="row mx-sm-5 mt-sm-5">
+                                <div class="col-lg-4 col-sm-12">
+                                    <div class="d-flex flex-row">
+                                        <img src="img/woman-casual.jpg" alt="Jonathen Doe" class="img4 mt-sm-2 mt-lg-3 mr-lg-3 rounded-circle" width="55px" height="55px">
+                                        <div class="d-flex flex-column ml-sm-4">
+                                            <h4 class="font-weight-bold mt-sm-2 mt-lg-3 font20">Johnathen Doe</h4>
+                                            <p class="text-secondary font20">August 28, 2016</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-sm-12 mt-lg-3">
+                                    <h4 class="font-weight-bold mb-2 mt-sm-2 font20">Excellent</h4>
+                                    <div class="mb-lg-4 my-sm-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star text-secondary"></i></div>
+                                    <p class="text-secondary pr-lg-5 font15 py1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem error incidunt veritatis quia. Eligendi deserunt in facilis temporibus quod ipsum maiores saepe vitae quidem itaque assumenda quo voluptatem commodi ad nihil modi, nesciunt repellat a. Temporibus cupiditate omnis amet quod ullam saepe laborum rem odit. Velit explicabo impedit quibusdam rerum.</p>
+                                </div>
+                            </div>
+
+                            <p class="text-center pt-5"><span class="font-weight-bold pb-1 border border-warning border-top-0 border-left-0 border-right-0">Load more(21)</span> </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Related -->
+                    <div class="row mt-5 mx-sm-5" id="related" style="margin-bottom: 8.5em;">
+                        <div class="col-lg-12 col-sm-12 pl-lg-5 reviews">
+                            <h3 class="mb-lg-5"><strong>Related Products</strong></h3>
+        
+                            <!-- Row 1 -->
+                            <div class="row pt-lg-0">
+                                <div class="col-lg-3 col-sm-6 p-0">
+                                    <div>
+                                        <img src="img/pic9.jpg" alt="" class="lazy mt-lg-0">
+                                    </div>
+                                    <div class="background-details">
+                                        <h4 class="text-center text-white">Bamboo fiber gobo</h4>
+                                        <h4 class="text-center text-white font20"><span class="through text-dark">$169 </span>  $149</p>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6 p-0">
+                                    <div>
+                                        <img src="img/pic10.jpg" alt="" class="lazy mt-lg-0">
+                                    </div>
+                                    <div class="background-details">
+                                        <h4 class="text-center text-white">Bamboo fiber gobo</h4>
+                                        <h4 class="text-center text-white font20"><span class="through text-dark">$169 </span>  $149</p>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6 p-0">
+                                <div>
+                                        <img src="img/pic11.jpg" alt="" class="lazy mt-lg-0">
+                                    </div>
+                                    <div class="background-details">
+                                        <h4 class="text-center text-white">Bamboo fiber gobo</h4>
+                                        <h4 class="text-center text-white font20"><span class="through text-dark">$169 </span>  $149</p>
+                                        </h4>
+                                    </div> 
+                                </div>
+                                <div class="col-lg-3 col-sm-6 p-0">
+                                    <div>
+                                        <img src="img/pic12.jpg" alt="" class="lazy mt-lg-0">
+                                    </div>
+                                    <div class="background-details">
+                                        <h4 class="text-center text-white">Bamboo fiber gobo</h4>
+                                        <h4 class="text-center text-white font20"><span class="through text-dark">$169 </span>  $149</p>
+                                        </h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+        
+                            <!-- Row 2 -->
+                            <div class="row pt-lg-0">
+                                <div class="col-lg-3 col-sm-6 p-0">
+                                    <div>
+                                        <img src="img/pic8.jpg" alt="" class="lazy mt-lg-0">
+                                    </div>
+                                    <div class="background-details">
+                                        <h4 class="text-center text-white">Bamboo fiber gobo</h4>
+                                        <h4 class="text-center text-white font20"><span class="through text-dark">$169 </span>  $149</p>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6 p-0">
+                                    <div>
+                                        <img src="img/pic3.jpg" alt="" class="lazy mt-lg-0">
+                                    </div>
+                                    <div class="background-details">
+                                        <h4 class="text-center text-white">Bamboo fiber gobo</h4>
+                                        <h4 class="text-center text-white font20"><span class="through text-dark">$169 </span>  $149</p>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6 p-0">
+                                    <div>
+                                        <img src="img/pic7.jpg" alt="" class="lazy mt-lg-0">
+                                    </div>
+                                    <div class="background-details">
+                                        <h4 class="text-center text-white">Bamboo fiber gobo</h4>
+                                        <h4 class="text-center text-white font20"><span class="through text-dark">$169 </span>  $149</p>
+                                        </h4>
+                                    </div> 
+                                </div>
+                                <div class="col-lg-3 col-sm-6 p-0">
+                                    <div>
+                                        <img src="img/pic13.jpg" alt="" class="lazy mt-lg-0">
+                                    </div>
+                                    <div class="background-details">
+                                        <h4 class="text-center text-white">Bamboo fiber gobo</h4>
+                                        <h4 class="text-center text-white font20"><span class="through text-dark">$169 </span>  $149</p>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <!-- Related -->
-            <div class="row mt-5 mx-sm-5" id="related" style="margin-bottom: 8.5em;">
-                <div class="col-lg-3">
-                    <ul class="text-right list-unstyled sticky2 d-none d-lg-block">
-                        <li class="py font font-weight-bold selected"   ><a href="#details" id="head" class="text-decoration-none text-dark">DETAILS</a></li>
-                        <li class="py font font-weight-bold"    ><a href="#description" id="head" class="text-decoration-none text-dark">DESCRIPTION</a></li>
-                        <li class="py font font-weight-bold"    ><a href="#reviews" id="head" class="text-decoration-none text-dark">REVIEWS</a></li>
-                        <li class="py font font-weight-bold"    ><a href="#related" id="head" class="text-decoration-none text-dark">RELATED</a></li>
-                        <li class="d-none d-lg-block">
-                            <ul class="nav float-right">
-                                <li class="p-3"><a href="#"><i class="fab fa-facebook-f text-dark"></i></a></li>
-                                <li class="p-3"><a href="#"><i class="fab fa-twitter text-dark"></i></a></li>
-                                <li class="pl-3 pt-3"><a href="#"><i class="fab fa-pinterest text-dark"></i></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-9 col-sm-12 pl-lg-5 reviews">
-                    <h3 class="mb-lg-5"><strong>Related Products</strong></h3>
-
-                    <!-- Row 1 -->
-                    <div class="row pt-lg-0">
-                        <div class="col-lg-3 col-sm-6 p-0">
-                            <div>
-                                <img src="img/pic9.jpg" alt="" class="lazy mt-lg-0">
-                            </div>
-                            <div class="background-details">
-                                <h4 class="text-center text-white">Bamboo fiber gobo</h4>
-                                <h4 class="text-center text-white font20"><span class="through text-dark">$169 </span>  $149</p>
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 p-0">
-                            <div>
-                                <img src="img/pic10.jpg" alt="" class="lazy mt-lg-0">
-                            </div>
-                            <div class="background-details">
-                                <h4 class="text-center text-white">Bamboo fiber gobo</h4>
-                                <h4 class="text-center text-white font20"><span class="through text-dark">$169 </span>  $149</p>
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 p-0">
-                           <div>
-                                <img src="img/pic11.jpg" alt="" class="lazy mt-lg-0">
-                            </div>
-                            <div class="background-details">
-                                <h4 class="text-center text-white">Bamboo fiber gobo</h4>
-                                <h4 class="text-center text-white font20"><span class="through text-dark">$169 </span>  $149</p>
-                                </h4>
-                            </div> 
-                        </div>
-                        <div class="col-lg-3 col-sm-6 p-0">
-                            <div>
-                                <img src="img/pic12.jpg" alt="" class="lazy mt-lg-0">
-                            </div>
-                            <div class="background-details">
-                                <h4 class="text-center text-white">Bamboo fiber gobo</h4>
-                                <h4 class="text-center text-white font20"><span class="through text-dark">$169 </span>  $149</p>
-                                </h4>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                    <!-- Row 2 -->
-                    <div class="row pt-lg-0">
-                        <div class="col-lg-3 col-sm-6 p-0">
-                            <div>
-                                <img src="img/pic8.jpg" alt="" class="lazy mt-lg-0">
-                            </div>
-                            <div class="background-details">
-                                <h4 class="text-center text-white">Bamboo fiber gobo</h4>
-                                <h4 class="text-center text-white font20"><span class="through text-dark">$169 </span>  $149</p>
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 p-0">
-                            <div>
-                                <img src="img/pic3.jpg" alt="" class="lazy mt-lg-0">
-                            </div>
-                            <div class="background-details">
-                                <h4 class="text-center text-white">Bamboo fiber gobo</h4>
-                                <h4 class="text-center text-white font20"><span class="through text-dark">$169 </span>  $149</p>
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 p-0">
-                            <div>
-                                <img src="img/pic7.jpg" alt="" class="lazy mt-lg-0">
-                            </div>
-                            <div class="background-details">
-                                <h4 class="text-center text-white">Bamboo fiber gobo</h4>
-                                <h4 class="text-center text-white font20"><span class="through text-dark">$169 </span>  $149</p>
-                                </h4>
-                            </div> 
-                        </div>
-                        <div class="col-lg-3 col-sm-6 p-0">
-                            <div>
-                                <img src="img/pic13.jpg" alt="" class="lazy mt-lg-0">
-                            </div>
-                            <div class="background-details">
-                                <h4 class="text-center text-white">Bamboo fiber gobo</h4>
-                                <h4 class="text-center text-white font20"><span class="through text-dark">$169 </span>  $149</p>
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <!-- Side Texts -->
         <div>
-            <h1 class="sidedetails">Details</h1>
+            <h1 class="sidedetails" data-aos="fade-down">Details</h1>
             <h1 class="sidedescrip">Description</h1>
             <h1 class="sidedescrip1">Description</h1>
             <h1 class="sidedescrip2">Description</h1>
@@ -461,9 +397,21 @@
 
     <script src="js/main.js"></script>
 
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+    <!-- AOS Links -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- Bootstrap JS Links -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
