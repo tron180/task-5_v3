@@ -102,6 +102,10 @@
         left: -235px !important;
     }
 
+    .sticky{
+        padding-bottom: 10rem !important;
+    }
+
 }
 
 /* medium */
@@ -405,4 +409,9 @@
     .overlap-text{
         left: -160px !important;
     }
+}
+
+@keyframes width_right{
+    from{width:0;}
+    to{width:100%;}
 }

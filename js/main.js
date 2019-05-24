@@ -48,3 +48,23 @@ function starmark(item){
         }
     }
 }
+
+// Color Shade Selection
+$(document).ready(function(){
+	$('#color i').click(function(){
+		$('#color i').removeClass('fa-check-circle').addClass('fa-circle');
+		$(this).removeClass('fa-circle').addClass('fa-check-circle');
+	});
+})
+
+function heart(){
+    var heart = document.getElementById("heart");
+    heart.click(function(){
+        heart.style.color = "red";
+    });
+}
+
+// Video Transition
+// function right_shift(){
+//     document.getElementById("video").style.width = "100%";
+// }

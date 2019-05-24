@@ -14,9 +14,6 @@
     <!-- Bootstrap Link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- AOS Link -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <title>Responsive Website</title>
 </head>
 <body style="background-color: #e6e6e6">
@@ -76,12 +73,12 @@
         <section class="container-fluid de">
 
             <div class="row">
-                <div class="col-lg-3 pr-lg-5 pb-lg-5">
+                <div class="col-lg-3 pr-lg-5">
                     <ul class="text-right list-unstyled sticky" id="sticky">
-                        <li id="py" class="py font font-weight-bold selected"><a href="#details" class="text-decoration-none text-dark">DETAILS</a></li>
-                        <li id="py" class="py font font-weight-bold selecting"><a href="#description" class="text-decoration-none text-dark">DESCRIPTION</a></li>
-                        <li id="py" class="py font font-weight-bold"><a href="#reviews" class="text-decoration-none text-dark">REVIEWS</a></li>
-                        <li id="py" class="py font font-weight-bold"><a href="#related" class="text-decoration-none text-dark">RELATED</a></li>
+                        <li id="py1" class="py font font-weight-bold selecting selected"><a href="#details" class="text-decoration-none text-dark">DETAILS</a></li>
+                        <li id="py2" class="py font font-weight-bold"><a href="#description" class="text-decoration-none text-dark">DESCRIPTION</a></li>
+                        <li id="py3" class="py font font-weight-bold"><a href="#reviews" class="text-decoration-none text-dark">REVIEWS</a></li>
+                        <li id="py4" class="py font font-weight-bold"><a href="#related" class="text-decoration-none text-dark">RELATED</a></li>
                         <li class="d-none d-lg-block">
                             <ul class="nav float-right">
                                 <li class="p-3"><a href="#"><i class="fab fa-facebook-f text-dark"></i></a></li>
@@ -134,9 +131,11 @@
                                         </div>
                                     </div>
                                     <p class="font text-uppercase font-weight-bolder">color:</p>
-                                    <i class="fas fa-circle" style="font-size:1.5em; color: #e6ccb3"></i>
-                                    <i class="fas fa-check-circle" style="font-size:1.5em;"></i>
-                                    <i class="fas fa-circle text-white border border-dark" style="border-radius:50%; font-size: 1.4em;"></i>
+                                    <div id="color">
+                                        <i class="fas fa-circle" style="font-size:1.5em; color: #e6ccb3"></i>
+                                        <i class="fas fa-check-circle" style="font-size:1.5em;"></i>
+                                        <i class="fas fa-circle" style="border-radius:50%; font-size: 1.5em;color: #b3b3b3;"></i>
+                                    </div>
                                     <br>
                                     <div class="btn-group py-3 mb-5" role="group" aria-label="Basic example">
                                         <button type="button" style="background-color: #e6e6e6;" class="btn btn-secondary border-0 text-dark font-weight-bold" onclick="dec()">-</button>
@@ -151,7 +150,7 @@
 
                     <!-- Description -->
                     <div class="row mt-lg-5" id="description" style="margin-bottom: 8.5em;">
-                        <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="row">
                                 <div class="col-sm-12 col-md-3 col-lg-3">
                                     <div class="mt-lg-5 pt text-justify" style="max-width:230px;">
@@ -164,30 +163,29 @@
                                         <img class="img-fluid img2" src="img/living.jpg" alt="Sofa Pic">
                                     </div>
                                     <div class="pl-sm-4">
-                                        <h3 class="mt-lg-1 ml-lg-2 pr-lg-4 pb-lg-5 overlap-text font-weight-bolder"><span data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">At vero eos et accusamus et iusto odio dignissimos.</span></h3>
+                                        <h3 class="mt-lg-1 ml-lg-2 pr-lg-4 pb-lg-5 overlap-text font-weight-bolder"><span>At vero eos et accusamus et iusto odio dignissimos.</span></h3>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row mt-5" id="description" style="margin-bottom: 8.5em;">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="col-lg-12 col-md-12 col-sm-12" onscroll="right_shift()">
                             <div class="row overlap">
-                                <div class="col-lg-1"></div>
-                                <div class="col-lg-11 pr-lg-0">
-                                    <iframe width="100%" height="500px" src="https://www.youtube.com/embed/qgzn86vgbDE?controls=0?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="col-lg-12 pr-lg-0">
+                                    <iframe id="video" width="100%" height="500px" src="https://www.youtube.com/embed/qgzn86vgbDE?controls=0?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <h3 class="mt-lg-1 font-weight-bolder overlap-text1">At vero eos et accusamus et iusto odio dignissimos.</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row mt-5" id="description2" style="margin-bottom: 8.5em;">
-                        <div class="col-lg-12 col-md-12 col-sm-12 pl-lg-5 pr-lg-0">
+                        <div class="col-lg-12 col-md-12 col-sm-12 pr-lg-0">
                             <div class="overlap">
                                 <img class="img-fluid img3" src="img/full.jpg" alt="Sofa Pic">
                                 <img class="img-thumbnail thumb shadow-lg" src="img/short.jpg" alt="">
                                 <p class="pdf font-weight-bold"><i class="far fa-arrow-alt-circle-down"></i>&nbsp;&nbsp;&nbsp; DOWNLOAD PDF</p>
-                                <p class="text-uppercase mb-0 font font-weight-bold invert"> <span>suggested accomodation</span></p>
+                                <p class="text-uppercase mb-0 font font-weight-bold invert"> <span>&nbsp; suggested accomodation</span></p>
                             </div>
                         </div>
                     </div>
@@ -343,7 +341,7 @@
 
         <!-- Side Texts -->
         <div>
-            <h1 class="sidedetails" data-aos="fade-down">Details</h1>
+            <h1 class="sidedetails">Details</h1>
             <h1 class="sidedescrip">Description</h1>
             <h1 class="sidedescrip1">Description</h1>
             <h1 class="sidedescrip2">Description</h1>
@@ -394,24 +392,14 @@
 
 
 
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <script src="js/main.js"></script>
-
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-
-    <!-- AOS Links -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Bootstrap JS Links -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <script>
-        AOS.init();
-    </script>
 </body>
 </html>

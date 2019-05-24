@@ -224,6 +224,7 @@ hr{
     top: 132px;
     border-bottom: 1px solid;
     line-height: 1px;
+    left: -90px;
 }
 
 
@@ -234,7 +235,7 @@ hr{
 .img-thumbnail{
     position: absolute;
     bottom: 48px;
-    left: 64px;
+    left: 15px;
     max-width: 30% !important;
     padding: 0 !important;
     margin: 0 !important;
@@ -250,7 +251,7 @@ hr{
 }
 
 .img3{
-    padding-left: 13%;
+    padding-left: 8%;
 }
 
 .fa-arrow-alt-circle-down{
@@ -291,4 +292,12 @@ hr{
 
 .selecting{
     background-image: linear-gradient(#e6e6e6 60%, #fddd7b 40%)
+}
+
+#video{
+    display: inline-block;
+    animation: width_right 4s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
 }
