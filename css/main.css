@@ -301,3 +301,19 @@ hr{
     overflow: hidden;
     text-overflow: clip;
 }
+
+.animationOverlay {
+    background-color: #e6e6e6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: scaleY(1.15);
+            transform: scaleY(1.15);
+    -webkit-transition: left, width, 2s;
+    transition: left, width, 2s;
+    
+            
+    z-index: 999;
+}
